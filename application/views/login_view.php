@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PBIS-Login</title>
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/frontend/css/bootstrap.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/frontend/css/style.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
 </head>
 <body>
 	<div class="container">
@@ -67,8 +67,8 @@
 	</div><!--.container-->
 
 	<!--scripts-->
-	<script src="<?php echo base_url(); ?>assets/frontend/js/jquery-1.11.0.min.js"></script>
-	<script src="<?php echo base_url(); ?>assets/frontend/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery-1.11.0.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 	<script>
 		setTimeout(fade_out, 1700);
 		function fade_out() {

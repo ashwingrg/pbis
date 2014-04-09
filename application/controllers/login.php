@@ -8,7 +8,8 @@ class Login extends CI_Controller {
 		if($_POST){
 			$usernameoremail = $this->input->post("usernameoremail");
 			$password = $this->input->post("password");
-			$check = $this->user_model->checkUser($usernameoremail,$password);
+			$hashpsw = hash('sha512', $password);
+			$check = $this->user_model->checkUser($usernameoremail,$hashpsw);
 			if($check){
 				$user_id = $check->user_id;
 				$details = $this->user_model->userInfoById($user_id);
@@ -24,7 +25,7 @@ class Login extends CI_Controller {
 				redirect('login');
 			}
 		}
-		$this->load->view('frontend/login_view');
+		$this->load->view('login_view');
 	}
 
 	public function logout(){
@@ -36,4 +37,4 @@ class Login extends CI_Controller {
 }
 
 /* End of file login.php */
-/* Location: ./application/controllers/frontend/login.php */
+/* Location: ./application/controllers/login.php */

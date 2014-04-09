@@ -4,8 +4,8 @@ class Dashboard extends My_Controller {
 
 	public function index()
 	{
-		$data['subview'] = 'frontend/home_dashboard';
-		$this->load->view('frontend/layouts/layouts',$data);
+		$data['subview'] = 'home_dashboard';
+		$this->load->view('layouts/layouts',$data);
 	}
 
 }

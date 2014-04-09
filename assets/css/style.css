@@ -176,3 +176,22 @@ h5.panel-title > .glyphicon {
 	padding-top:11px; 
 	padding-bottom:0px;
 }
+
+/**************** user-profile navtabs ********************/
+.nav-tabs  > li {
+	margin-left: .5em;
+}
+.nav-tabs  > li  > a {
+	border-radius: 0px;
+	background-clip: padding-box;
+}
+
+/**************** Notify Message ******************/
+.alert-dismissable {
+	line-height: 0.7em;
+}
+
+
+.workplandetailform input {
+	border-radius: 0px;
+}
