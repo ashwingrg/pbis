@@ -68,8 +68,24 @@ $route['home/exco/update/(:num)'] = "excomember/updateMember/$1";
 $route['home/userdetails'] = "loggedinuser";
 
 #workplan-detail
+$route['home/workplandetail'] = "workplandetail";
+$route['home/viewwpd/(:num)'] = "workplandetail/viewWPD/$1";
 $route['home/workplandetail/new'] = "workplandetail/newWorkplanDetail";
+$route['home/workplandetail/edit/(:num)'] = "workplandetail/editWorkplanDetail/$1";
 $route['home/workplandetail/filterquarter'] = "workplandetail/filterQarter";
+$route['home/workplandetail/wpdApprove/(:num)'] = "workplandetail/wpdApprove/$1";
+
+$route['home/workplanprogress/(:num)'] = "workplandetail/progress/$1";
+$route['home/progressdetail/(:num)'] = "workplandetail/progressDetails/$1";
+
+
+$route['home/workplanprogress'] = "workplanprogress";
+$route['home/workplanprogress/view/(:num)'] = "workplanprogress/viewWPP/$1";
+$route['home/progresstoexco/(:num)'] = "workplanprogress/progressExCo/$1";
+$route['home/wppapproved/(:num)'] = "workplanprogress/wppApproved/$1";
+$route['home/wppdisapproved/(:num)'] = "workplanprogress/wppDisapproved/$1";
+
+$route['home/pbis'] = "pbis";
 
 $route['404_override'] = '';
 

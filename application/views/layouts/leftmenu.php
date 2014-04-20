@@ -31,14 +31,15 @@
 				    	<div id="collapseTwo" class="panel-collapse collapse in">
 				      		<div class="panel-body">
 				        		<ul class="list-group">
-				        			<?php if($usertype == "div_chief" && $userdiv != "Administration" && $userdiv != "ExCo"){ ?>
+				        			<?php if($usertype == "div_chief" && $userdiv != "ExCo"){ ?>
 				        			<li class="list-group-item"><a href="<?php echo site_url('home/workplandetail/new'); ?>" data-toggle="tooltip" data-placement="right">New Workplan Detail</a></li>
 				        			<?php } ?>
-				        			<li class="list-group-item"><a href="">List All Workplans Detail</a></li>
-				        			<?php if($usertype == "div_chief" && $userdiv != "Administration" && $userdiv != "ExCo"){ ?>
-				        			<li class="list-group-item"><a href="">New Workplan Progress</a></li>
+				        			<?php if($userdiv != "ExCo"){ ?>
+				        			<li class="list-group-item"><a href="<?php echo site_url('home/workplandetail'); ?>">List All Workplans Detail</a></li>
 				        			<?php } ?>
-				        			<li class="list-group-item"><a href="">List All Workplan Progress</a></li>
+				        			<?php if($userdiv != "ExCo"){ ?>
+				        			<?php } ?>
+				        			<li class="list-group-item"><a href="<?php echo site_url('home/workplanprogress'); ?>">List All Workplan Progress</a></li>
 				        		</ul>
 				      		</div>
 				    	</div>
@@ -99,7 +100,7 @@
 					<div class="panel panel-default">
 				   		<div class="panel-heading" >
 				      		<h5 class="panel-title">
-				        		<span class="glyphicon glyphicon-stats"></span>&nbsp;<a data-toggle="collapse" data-parent="#pbis" href="#collapseFive">
+				        		<span class="glyphicon glyphicon-stats"></span>&nbsp;<a data-toggle="" data-parent="" href="<?php echo site_url('home/pbis'); ?>">
 				          		PBIS Percentage
 				        		</a>
 				      		</h5>
